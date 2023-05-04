@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clinica.View.Registro"
+             Background="#282B30">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="80" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <Label Text="Registro" Grid.Column="0" Grid.Row="0" TextColor="White" />
+                <Entry Placeholder="Nombre" Grid.Column="0" Grid.Row="1" />
+                <Entry Placeholder="Apellido" Grid.Column="0" Grid.Row="2" />
+                <Entry Placeholder="Correo" Grid.Column="0" Grid.Row="3" />
+                <Entry Placeholder="Contraseña" Grid.Column="0" Grid.Row="4" />
+                <Entry Placeholder="Teléfono" Grid.Column="0" Grid.Row="5" />
+                <Entry Placeholder="Usuario" Grid.Column="0" Grid.Row="6" />
+                <Button Text="Registrar" Grid.Column="0" Grid.Row="7" Margin="20 ,0,20,0" />
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>

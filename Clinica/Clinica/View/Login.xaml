@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clinica.View.Login"
+             Background="#282B30">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="350" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                
+            </Grid.RowDefinitions>
+
+
+            <Label Text="Login" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" TextColor="White" />
+
+            <StackLayout Grid.Column="0" Grid.Row="1">
+                <Entry Placeholder="Usuario"  x:Name="EnUser"  
+                   Text="{Binding UsuarioTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Contraseña" x:Name="EnCont" 
+                   Text="{Binding PasswordTxt, Mode=TwoWay}" />
+            </StackLayout>
+           
+            <Button  Text="Ingresar" Command="{Binding LoginCommand}"  Grid.Column="0" Grid.Row="2" />
+            <Button Text="Limpiar" Command="{Binding LimpiarCommand}" Grid.Column="0" Grid.Row="3"/>
+            <Button Text="Registrarse" Command="{Binding LoginCommand}" Grid.Column="0" Grid.Row="4"
+                    Clicked="Button_Clicked"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

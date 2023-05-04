@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clinica.Style">
+
+
+
+    <Color x:Key="Primary">#2C2891</Color>
+    <Color x:Key="Secondary">#39A388</Color>
+    <Color x:Key="Boton">#1F2022</Color>
+    <Color x:Key="Letra">white</Color>
+    <Color x:Key="Entry">#7F8284</Color>
+
+
+    <!--Implicito-->
+    <Style TargetType="Button">
+        <Setter Property="CornerRadius" Value="50" ></Setter>
+        <Setter Property="BackgroundColor" Value="{StaticResource Boton}"></Setter>
+        <Setter Property="TextColor" Value="{StaticResource Letra}"></Setter>
+        <Setter Property="Margin" Value="20,0,20,0"></Setter>
+        
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource Primary}"></Setter>
+        <Setter Property="FontSize" Value="Large"></Setter>
+        <Setter Property="VerticalOptions" Value="Center"></Setter>
+        <Setter Property="Margin" Value="40,10"></Setter>
+    </Style>
+    <Style TargetType="Entry">
+        <Setter Property="Margin" Value="40,10"></Setter>
+        <Setter Property="BackgroundColor" Value="Transparent"></Setter>
+        <Setter Property="TextColor" Value="Gray"></Setter>
+        
+    </Style>
+
+</ResourceDictionary>
