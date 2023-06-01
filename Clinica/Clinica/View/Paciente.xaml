@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clinica.View.Paciente"
+             Background="#282B30">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" Grid.Row="0"  HorizontalOptions="CenterAndExpand">
+                <Label Text="" Margin="100,0" />
+                <Label Text="REGISTRAR PACIENTE" TextColor="White" />
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="1">
+                <Entry Placeholder="Cédula" PlaceholderColor="White" Text="{Binding CedulaTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Nombres" PlaceholderColor="White" Text="{Binding NombresTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Apellidos" PlaceholderColor="White" Text="{Binding ApellidosTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Correo" PlaceholderColor="White" Text="{Binding CorreoTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Fecha" PlaceholderColor="White" Text="{Binding FechaTxt, Mode=TwoWay}" />
+                <Button Text="REGISTRAR" Command="{Binding GuardarPCommand}"/>
+                <Button Text="BORRAR" Command="{Binding BorrarCommand}"/>
+               
+
+            </StackLayout>
+        </Grid>
+        
+
+    </ContentPage.Content>
+</ContentPage>

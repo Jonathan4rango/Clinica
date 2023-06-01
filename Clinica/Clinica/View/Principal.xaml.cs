@@ -1,4 +1,6 @@
-﻿using Clinica.View;
+﻿using Clinica.Model;
+using Clinica.View;
+using Clinica.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,11 +18,9 @@ namespace Clinica
         public Principal()
         {
             InitializeComponent();
+            BindingContext = new PacienteViewModel();
         }
 
-        async void Btn_login_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Login());
-        }
+      
     }
 }

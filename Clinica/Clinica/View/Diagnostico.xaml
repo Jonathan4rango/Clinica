@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clinica.View.Diagnostico"
+             Background="#282B30">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="200" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" Grid.Row="0"  HorizontalOptions="CenterAndExpand">
+                <Label Text="" Margin="00,0" />
+                <Label Text="" Margin="00,0" />
+                <Label Text="" Margin="00,0" />
+                <Label Text="REGISTRAR PACIENTE" TextColor="White" />
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="1">
+              
+                <Entry Placeholder="Codigo" PlaceholderColor="White" Text="{Binding CodigoTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Nombre Diagnóstico" PlaceholderColor="White" Text="{Binding NombresTxt, Mode=TwoWay}" />
+                <Button Text="REGISTRAR" Command="{Binding GuardarDCommand}"/>
+                <Button Text="BORRAR" Command="{Binding BorrarCommand}"/>
+
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

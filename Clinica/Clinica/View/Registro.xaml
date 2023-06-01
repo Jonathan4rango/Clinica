@@ -21,13 +21,13 @@
                 </Grid.RowDefinitions>
 
                 <Label Text="Registro" Grid.Column="0" Grid.Row="0" TextColor="White" />
-                <Entry Placeholder="Nombre" Grid.Column="0" Grid.Row="1" />
-                <Entry Placeholder="Apellido" Grid.Column="0" Grid.Row="2" />
-                <Entry Placeholder="Correo" Grid.Column="0" Grid.Row="3" />
-                <Entry Placeholder="Contraseña" Grid.Column="0" Grid.Row="4" />
-                <Entry Placeholder="Teléfono" Grid.Column="0" Grid.Row="5" />
-                <Entry Placeholder="Usuario" Grid.Column="0" Grid.Row="6" />
-                <Button Text="Registrar" Grid.Column="0" Grid.Row="7" Margin="20 ,0,20,0" />
+                <Entry Placeholder="Nombre" Grid.Column="0" Grid.Row="1" Text="{Binding NombreTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Apellido" Grid.Column="0" Grid.Row="2" Text="{Binding ApellidoTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Correo" Grid.Column="0" Grid.Row="3" Text="{Binding CorreoTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Contraseña" Grid.Column="0" Grid.Row="4" Text="{Binding ContrasenaTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Teléfono" Grid.Column="0" Grid.Row="5" Text="{Binding TeléfonoTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Usuario" Grid.Column="0" Grid.Row="6" Text="{Binding UsuarioTxt, Mode=TwoWay}" />
+                <Button Text="Registrar" Grid.Column="0" Grid.Row="7" Margin="20 ,0,20,0" Command="{Binding RegistrarseCommand}"/>
             </Grid>
         </ScrollView>
 

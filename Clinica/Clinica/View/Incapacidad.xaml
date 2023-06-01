@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Clinica.View.Incapacidad"
+             Background="#282B30">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Column="0" Grid.Row="0"  HorizontalOptions="CenterAndExpand">
+                <Label Text="" Margin="100,0" />
+                <Label Text="REGISTRAR INCAPACIDAD" TextColor="White" />
+            </StackLayout>
+            <StackLayout Grid.Column="0" Grid.Row="1">
+                <Entry Placeholder="N incapacidad" PlaceholderColor="White" Text="{Binding IncapacidadTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Días incapacidad" PlaceholderColor="White" Text="{Binding DiasTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Fecha" PlaceholderColor="White" Text="{Binding FechaTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Cédula del paciente" PlaceholderColor="White" Text="{Binding CedulaTxt, Mode=TwoWay}" />
+                <Button Text="REGISTRAR" Command="{Binding GuardarPCommand}"/>
+                <Button Text="BORRAR" Command="{Binding BorrarCommand}"/>
+
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -21,16 +21,15 @@
             <Label Text="Login" HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" TextColor="White" />
 
             <StackLayout Grid.Column="0" Grid.Row="1">
-                <Entry Placeholder="Usuario"  x:Name="EnUser"  
+                <Entry Placeholder="Usuario" PlaceholderColor="White"  x:Name="EnUser"  
                    Text="{Binding UsuarioTxt, Mode=TwoWay}" />
-                <Entry Placeholder="Contraseña" x:Name="EnCont" 
-                   Text="{Binding PasswordTxt, Mode=TwoWay}" />
+                <Entry Placeholder="Contraseña" PlaceholderColor="White"  x:Name="EnCont" 
+                   Text="{Binding ContrasenaTxt, Mode=TwoWay}" />
             </StackLayout>
            
-            <Button  Text="Ingresar" Command="{Binding LoginCommand}"  Grid.Column="0" Grid.Row="2" />
+            <Button  Text="Ingresar" Command="{Binding IngresarCommand}"  Grid.Column="0" Grid.Row="2" />
             <Button Text="Limpiar" Command="{Binding LimpiarCommand}" Grid.Column="0" Grid.Row="3"/>
-            <Button Text="Registrarse" Command="{Binding LoginCommand}" Grid.Column="0" Grid.Row="4"
-                    Clicked="Button_Clicked"/>
+            <Button Text="Registrarse" Command="{Binding IrLoginCommand}" Grid.Column="0" Grid.Row="4"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

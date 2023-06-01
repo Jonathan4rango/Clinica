@@ -11,12 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace Clinica.View
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Registro : ContentPage
+	public partial class Incapacidad : ContentPage
 	{
-		public Registro ()
+		public Incapacidad ()
 		{
 			InitializeComponent ();
-            BindingContext = new RegistroViewModel();
+            BindingContext = new IncapacidadViewModel();
         }
 	}
 }
